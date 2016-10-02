@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#DFF8EB"
+    tools:context="com.example.kunal.project.FileActivity">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:id="@+id/writemessage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Enter a message"
+        android:textCursorDrawable="@null"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Write Message"
+        android:background="#AED6F1"
+        android:textStyle="italic"
+        android:layout_below="@+id/writemessage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button3"
+        android:nestedScrollingEnabled="false"
+        android:onClick="writemessage" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Read Message"
+        android:id="@+id/button2"
+        android:textStyle="italic"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignRight="@+id/writemessage"
+        android:layout_alignEnd="@+id/writemessage"
+        android:onClick="readmessage"
+        android:background="#AED6F1"
+        />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/fileinternaltext"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

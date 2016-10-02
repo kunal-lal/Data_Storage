@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF8EB"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name:   "
+        android:id="@+id/textView"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Marks:  "
+        android:id="@+id/textView3"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:inputType="text"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/editMarks"
+        android:layout_alignStart="@+id/editMarks"
+        android:textCursorDrawable="@null"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editMarks"
+        android:inputType="number"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/adddata"
+        android:layout_toEndOf="@+id/adddata"
+        android:textCursorDrawable="@null"
+        android:textColorHighlight="#000000"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Add Data"
+        android:id="@+id/adddata"
+        android:layout_marginTop="33dp"
+        android:onClick="addStudent"
+        android:textStyle="italic"
+        android:background="#AED6F1"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="View Data"
+        android:id="@+id/view"
+        android:background="#AED6F1"
+        android:onClick="viewData"
+        android:textStyle="italic"
+        android:layout_above="@+id/textView6"
+        android:layout_toLeftOf="@+id/textView7"
+        android:layout_toStartOf="@+id/textView7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Update"
+        android:id="@+id/button7"
+        android:background="#AED6F1"
+        android:layout_marginTop="38dp"
+        android:textStyle="italic"
+        android:onClick="Update"
+        android:layout_below="@+id/textView6"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <EditText
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextid"
+        android:onClick="Update"
+        android:inputType="number"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ID"
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_toRightOf="@+id/button7"
+        android:layout_toEndOf="@+id/button7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Delete"
+        android:id="@+id/button8"
+        android:background="#AED6F1"
+        android:onClick="Delete"
+        android:textStyle="italic"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toLeftOf="@+id/textView7"
+        android:layout_toStartOf="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Update and delete data using ID"
+        android:id="@+id/textView6"
+        android:textColor="#000000"
+        android:layout_below="@+id/adddata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ID"
+        android:id="@+id/textView7"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <EditText
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextid2"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7"
+        android:inputType="number"
+        />
+
+
+</RelativeLayout>
